@@ -5,6 +5,11 @@ import stage.body.buildings.Steel;
 import stage.body.buildings.Wall;
 import stage.body.tank.Tank;
 
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.io.File;
+import java.net.MalformedURLException;
+
 public class Bullet implements Runnable {
 
     private int x;
@@ -60,14 +65,14 @@ public class Bullet implements Runnable {
                 return;
             }
             if (x < 0 || y < 0 || x > 520 - 8 || y > 520 - 8) {
-                //if (this.getType() == 0) {
-                //try {
-                //    AudioClip bgm = Applet.newAudioClip(new File("bgm//hitLimit.wav").toURL());
-                //    bgm.play();
-                //} catch (MalformedURLException e2) {
-                //    e2.printStackTrace();
-                //}
-                //}
+                if (this.getType() == 0) {
+                    try {
+                        AudioClip bgm = Applet.newAudioClip(new File("bgm//hitLimit.wav").toURL());
+                        bgm.play();
+                    } catch (MalformedURLException e2) {
+                        e2.printStackTrace();
+                    }
+                }
                 this.Alive = false;
                 return;
             }

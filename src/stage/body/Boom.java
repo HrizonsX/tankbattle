@@ -1,7 +1,7 @@
 package stage.body;
 
 public class Boom {
-    // 只是记录draw boom的左上角的x、y
+    // 鍙槸璁板綍draw boom鐨勫乏涓婅鐨剎銆亂
     private int lx;
     private int ly;
     boolean alive;
