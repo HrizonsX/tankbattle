@@ -15,6 +15,8 @@ public class Player extends Tank {
     // limit time lag to fire
     int timeLag = 500;
 
+    long extTime;
+
     public Player(int x, int y) {
         super(x, y);
         this.setSpeed(2);
@@ -29,6 +31,7 @@ public class Player extends Tank {
         } catch (MalformedURLException e2) {
             e2.printStackTrace();
         }
+        this.extTime = System.currentTimeMillis();
     }
 
     long lastFire = 0;
@@ -126,4 +129,11 @@ public class Player extends Tank {
         return bulletPool;
     }
 
+    public long getExtTime() {
+        return extTime;
+    }
+
+    public void setExtTime(long extTime) {
+        this.extTime = extTime;
+    }
 }

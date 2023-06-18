@@ -329,12 +329,9 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
         }
 
         // draw player's tank 5.0
-        if (this.playerTank.isVisible() == false) {
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        long ext = this.playerTank.getExtTime();
+        if (this.playerTank.isVisible() == false && (System.currentTimeMillis() - ext >= 10)) {
+            this.playerTank.setExtTime(System.currentTimeMillis());
             this.playerTank.setMoving(false);
             this.stop = true;
             if (this.playerTank.getWhenBornPaintTimes() > 3) {
@@ -445,8 +442,8 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
         Iterator<Enemy> enemys = this.enemyTanks.iterator();
         while (enemys.hasNext()) {
             Enemy temp = enemys.next();
-            long ext = temp.getExtTime();
-            if (temp.isVisible() == false && (System.currentTimeMillis() - ext >= 80)) {
+            long exts = temp.getExtTime();
+            if (temp.isVisible() == false && (System.currentTimeMillis() - exts >= 80)) {
                 temp.setExtTime(System.currentTimeMillis());
                 if (temp.getWhenBornPaintTimes() > 3) {
                     g.drawImage(born1Image.getImage(), temp.getX(), temp.getY(), this);
@@ -673,6 +670,7 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
                         this.playerTank.setFastBullet(false);
                         this.playerTank.setDirection(0);
                         this.playerTank.setAlive(true);
+                        this.playerTank.setExtTime(System.currentTimeMillis());
                         this.playerTank.setMoving(false);
                         this.playerTank.setVisible(false);
                         this.playerTank.setWhenBornPaintTimes(4);
