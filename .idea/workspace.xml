@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16138535-68a6-464f-b33f-7b28236da72d" name="Changes" comment="文件编码改为utf-8">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="16138535-68a6-464f-b33f-7b28236da72d" name="Changes" comment="优化窗口位置+优化玩坦第一次上下左右移动时图片帧空白问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/Stage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/tank/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/tank/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/Stage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/StageBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/StageBody.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage$2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/start/StartPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stage/body/StageBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/StageBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/start/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/start/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/tank/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/tank/Enemy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +99,7 @@
       <workItem from="1686989946989" duration="15418000" />
       <workItem from="1687006912687" duration="1173000" />
       <workItem from="1687008525068" duration="170000" />
-      <workItem from="1687050467933" duration="7461000" />
+      <workItem from="1687050467933" duration="13557000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1687008637339</created>
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687051399993</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="优化窗口位置+优化玩坦第一次上下左右移动时图片帧空白问题">
+      <created>1687058056319</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687058056319</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +139,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="格式化代码" />
     <MESSAGE value="文件编码改为utf-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件编码改为utf-8" />
+    <MESSAGE value="优化窗口位置+优化玩坦第一次上下左右移动时图片帧空白问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化窗口位置+优化玩坦第一次上下左右移动时图片帧空白问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -142,18 +152,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/stage/body/StageBody.java</url>
-          <line>983</line>
-          <option name="timeStamp" value="13" />
+          <line>815</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/stage/body/StageBody.java</url>
-          <line>985</line>
-          <option name="timeStamp" value="14" />
+          <line>829</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/stage/body/StageBody.java</url>
-          <line>979</line>
-          <option name="timeStamp" value="15" />
+          <line>849</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stage/body/StageBody.java</url>
+          <line>865</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stage/body/StageBody.java</url>
+          <line>931</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

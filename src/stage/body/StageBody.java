@@ -445,12 +445,9 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
         Iterator<Enemy> enemys = this.enemyTanks.iterator();
         while (enemys.hasNext()) {
             Enemy temp = enemys.next();
-            if (temp.isVisible() == false) {
-                try {
-                    Thread.sleep(35);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+            long ext = temp.getExtTime();
+            if (temp.isVisible() == false && (System.currentTimeMillis() - ext >= 80)) {
+                temp.setExtTime(System.currentTimeMillis());
                 if (temp.getWhenBornPaintTimes() > 3) {
                     g.drawImage(born1Image.getImage(), temp.getX(), temp.getY(), this);
                 } else if (temp.getWhenBornPaintTimes() > 2) {
@@ -470,15 +467,17 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
             }
             if (temp.isAlive()) {
                 aliveTanks += 1;
-                if (temp.getType() == 2) {
-                    if (temp.getLife() == 2) {
-                        paintTank(g, temp.getType(), temp.getX(), temp.getY(), temp.getDirection());
-                    } else if (temp.getLife() == 1) {
-                        temp.setType(3);
+                if (temp.isVisible()) {
+                    if (temp.getType() == 2) {
+                        if (temp.getLife() == 2) {
+                            paintTank(g, temp.getType(), temp.getX(), temp.getY(), temp.getDirection());
+                        } else if (temp.getLife() == 1) {
+                            temp.setType(3);
+                            paintTank(g, temp.getType(), temp.getX(), temp.getY(), temp.getDirection());
+                        }
+                    } else {
                         paintTank(g, temp.getType(), temp.getX(), temp.getY(), temp.getDirection());
                     }
-                } else {
-                    paintTank(g, temp.getType(), temp.getX(), temp.getY(), temp.getDirection());
                 }
             }
 
@@ -1102,7 +1101,7 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
 
         while (true) {
             try {
-                Thread.sleep(20);
+                Thread.sleep(100);
             } catch (Exception e) {
                 e.printStackTrace();
             }

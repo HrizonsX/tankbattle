@@ -23,6 +23,7 @@ public class Enemy extends Tank implements Runnable {
     // 6: 基地获得建筑变成
     // TODO: 实现道具
     int award;
+    long extTime;
 
 
     public Enemy(int x, int y) {
@@ -38,6 +39,7 @@ public class Enemy extends Tank implements Runnable {
         this.setFlag(1);
         // to show born gif. new a enemy needs unvisual
         this.visible = false;
+        this.extTime = System.currentTimeMillis();
     }
 
     public boolean isAlive() {
@@ -222,5 +224,11 @@ public class Enemy extends Tank implements Runnable {
         this.whenBornPaintTimes = whenBornPaintTimes;
     }
 
+    public long getExtTime() {
+        return extTime;
+    }
 
+    public void setExtTime(long extTime) {
+        this.extTime = extTime;
+    }
 }
