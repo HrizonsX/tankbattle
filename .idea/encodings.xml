@@ -9,6 +9,6 @@
     <file url="file://$PROJECT_DIR$/src/stage/body/power/Power.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/stage/body/scores/Score.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/stage/body/tank/Enemy.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/stage/body/tank/Tank.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/stage/body/tank/Tank.java" charset="UTF-8" />
   </component>
 </project>

@@ -49,6 +49,7 @@ public class StartPage extends JFrame implements Runnable {
             public void actionPerformed(ActionEvent e) {
                 StartPage.this.setVisible(false);
                 JFrame stage = new Stage(StartPage.this);
+                stage.setLocation(getX(), getY());
                 new Timer().schedule(new TimerTask() {
                     @Override
                     public void run() {
@@ -105,7 +106,7 @@ public class StartPage extends JFrame implements Runnable {
     public void run() {
         while (true) {
             try {
-                Thread.sleep(200);
+                Thread.sleep(150);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

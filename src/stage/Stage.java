@@ -62,8 +62,8 @@ public class Stage extends JFrame implements Runnable {
         this.setIconImage(new ImageIcon("img//symbol.png").getImage());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(520 + 79, 520 + 28);
-        this.setLocation(screenSize.width / 2 - this.getWidth() / 2
-                , screenSize.height / 2 - this.getWidth() / 2);
+        //this.setLocation(screenSize.width / 2 - this.getWidth() / 2
+        //        , screenSize.height / 2 - this.getWidth() / 2);
         this.setVisible(true);
     }
 
@@ -141,6 +141,7 @@ public class Stage extends JFrame implements Runnable {
                         e.printStackTrace();
                     }
                     this.setVisible(false);
+                    this.startPage.setLocation(this.getX(), this.getY());
                     this.startPage.setVisible(true);
                     ((StartBackground) this.startPage.getBackgroundPanel()).setPts(this.totalPts);
                     this.startPage.repaint();

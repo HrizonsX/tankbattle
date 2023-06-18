@@ -348,7 +348,7 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
                 this.playerTank.setMoving(true);
                 this.playerTank.setVisible(true);
             } else {
-
+                this.playerTank.setVisible(true);
             }
             this.playerTank.cut();
         } else if (playerTank.isAlive() == true) {
@@ -570,13 +570,8 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
             enemyTanksNumberLimit = -1;
             bcgbgm.stop();
         }
-        // draw buldings such as grass, heal
-        // grass
-        for (int from = 0; from < this.grasses.size(); from++) {
-            Grass t = (Grass) this.grasses.get(from);
-            g.drawImage(grassImage.getImage(), t.getX(), t.getY(), this);
-        }
 
+        // draw buldings such as grass, heal
         // paint steel
         for (int from = 0; from < this.steels.size(); from++) {
             Steel t = (Steel) this.steels.get(from);
@@ -609,6 +604,12 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
             } else {
                 this.bulletBoom.remove(boom);
             }
+        }
+
+        // grass
+        for (int from = 0; from < this.grasses.size(); from++) {
+            Grass t = (Grass) this.grasses.get(from);
+            g.drawImage(grassImage.getImage(), t.getX(), t.getY(), this);
         }
 
         // draw home.gif
@@ -949,6 +950,7 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
                         g.drawImage(up2Image.getImage(), x, y, this);
                     } else {
                         if (this.stop == false) {
+                            g.drawImage(upImage.getImage(), x, y, this);
                             g.drawImage(upMoveImage.getImage(), x, y, this);
                         } else {
                             g.drawImage(upImage.getImage(), x, y, this);
@@ -978,6 +980,7 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
                         g.drawImage(left2Image.getImage(), x, y, this);
                     } else {
                         if (this.stop == false) {
+                            g.drawImage(leftImage.getImage(), x, y, this);
                             g.drawImage(leftMoveImage.getImage(), x, y, this);
                         } else {
                             g.drawImage(leftImage.getImage(), x, y, this);
@@ -1008,6 +1011,7 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
                         g.drawImage(down2Image.getImage(), x, y, this);
                     } else {
                         if (this.stop == false) {
+                            g.drawImage(downImage.getImage(), x, y, this);
                             g.drawImage(downMoveImage.getImage(), x, y, this);
                         } else {
                             g.drawImage(downImage.getImage(), x, y, this);
@@ -1037,6 +1041,7 @@ public class StageBody extends JPanel implements KeyListener, Runnable {
                         g.drawImage(right2Image.getImage(), x, y, this);
                     } else {
                         if (this.stop == false) {
+                            g.drawImage(rightImage.getImage(), x, y, this);
                             g.drawImage(rightMoveImage.getImage(), x, y, this);
                         } else {
                             g.drawImage(rightImage.getImage(), x, y, this);

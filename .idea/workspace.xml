@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16138535-68a6-464f-b33f-7b28236da72d" name="Changes" comment="格式化代码">
+    <list default="true" id="16138535-68a6-464f-b33f-7b28236da72d" name="Changes" comment="文件编码改为utf-8">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/BackgroundPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/BackgroundPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/GameOver.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/GameOver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/GameOver.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/GameOver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/power/Clock.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/power/Clock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/power/Power.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/power/Power.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/Stage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/tank/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/tankbattle/stage/body/tank/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stage/body/Boom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/Boom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stage/body/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stage/body/StageBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/StageBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stage/body/tank/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/tank/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stage/body/tank/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/tank/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/start/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/start/StartPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +97,7 @@
       <workItem from="1686989946989" duration="15418000" />
       <workItem from="1687006912687" duration="1173000" />
       <workItem from="1687008525068" duration="170000" />
-      <workItem from="1687050467933" duration="888000" />
+      <workItem from="1687050467933" duration="7461000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1687008637339</created>
@@ -120,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687050951618</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="文件编码改为utf-8">
+      <created>1687051399993</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687051399993</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +129,33 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="格式化代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="格式化代码" />
+    <MESSAGE value="文件编码改为utf-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件编码改为utf-8" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stage/Stage.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stage/body/StageBody.java</url>
+          <line>983</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stage/body/StageBody.java</url>
+          <line>985</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stage/body/StageBody.java</url>
+          <line>979</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
