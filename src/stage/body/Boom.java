@@ -1,62 +1,62 @@
 package stage.body;
 
 public class Boom {
-	// 只是记录draw boom的左上角的x、y
-	private int lx;
-	private int ly;
-	boolean alive;
-	boolean play;
-	int drawTimes;  // draw 7 times 2.0
-	
-	public Boom(int x, int y) {
-		super();
-		this.lx = x;
-		this.ly = y;
-		this.play = false;
-		this.drawTimes = 7;
-		this.alive = true;
-	}
+    // 只是记录draw boom的左上角的x、y
+    private int lx;
+    private int ly;
+    boolean alive;
+    boolean play;
+    int drawTimes;  // draw 7 times 2.0
 
-	public int getLx() {
-		return lx;
-	}
+    public Boom(int x, int y) {
+        super();
+        this.lx = x;
+        this.ly = y;
+        this.play = false;
+        this.drawTimes = 7;
+        this.alive = true;
+    }
 
-	public void setLx(int lx) {
-		this.lx = lx;
-	}
+    public int getLx() {
+        return lx;
+    }
 
-	public int getLy() {
-		return ly;
-	}
+    public void setLx(int lx) {
+        this.lx = lx;
+    }
 
-	public void setLy(int ly) {
-		this.ly = ly;
-	}
+    public int getLy() {
+        return ly;
+    }
 
-	public boolean isAlive() {
-		return alive;
-	}
+    public void setLy(int ly) {
+        this.ly = ly;
+    }
 
-	public void setAlive(boolean alive) {
-		this.alive = alive;
-	}
-	
+    public boolean isAlive() {
+        return alive;
+    }
 
-	public boolean isPlay() {
-		return play;
-	}
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
 
-	public void setPlay(boolean play) {
-		this.play = play;
-	}
 
-	public void cut() {
-		if(drawTimes > 0) {
-			drawTimes -= 1;
-			return;
-		}
-		alive = false;
-	}
-	
+    public boolean isPlay() {
+        return play;
+    }
+
+    public void setPlay(boolean play) {
+        this.play = play;
+    }
+
+    public void cut() {
+        if (drawTimes > 0) {
+            drawTimes -= 1;
+            return;
+        }
+        alive = false;
+    }
+
 
 }

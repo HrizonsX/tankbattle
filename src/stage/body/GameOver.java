@@ -2,59 +2,58 @@ package stage.body;
 
 public class GameOver implements Runnable {
 
-	private int x;
-	private int y;
-	private int speed = 20;
+    private int x;
+    private int y;
+    private int speed = 20;
 
-	public GameOver(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
+    public GameOver(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
-	@Override
-	public void run() {
+    @Override
+    public void run() {
 
-		while (true) {
+        while (true) {
 
-			try {
-				Thread.sleep(100);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			
-			this.y -= speed;
-			if(y < 260 - 21) {
-				break;
-			}
-		}
+            try {
+                Thread.sleep(100);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
-	}
+            this.y -= speed;
+            if (y < 260 - 21) {
+                break;
+            }
+        }
 
-	public int getX() {
-		return x;
-	}
+    }
 
-	public void setX(int x) {
-		this.x = x;
-	}
+    public int getX() {
+        return x;
+    }
 
-	public int getY() {
-		return y;
-	}
+    public void setX(int x) {
+        this.x = x;
+    }
 
-	public void setY(int y) {
-		this.y = y;
-	}
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
 
 
+    public int getSpeed() {
+        return speed;
+    }
 
-	public int getSpeed() {
-		return speed;
-	}
-
-	public void setSpeed(int speed) {
-		this.speed = speed;
-	}
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
 
 
 }

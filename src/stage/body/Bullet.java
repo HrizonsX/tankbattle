@@ -192,7 +192,7 @@ public class Bullet implements Runnable {
                                     break;
                                 }
                             }
-                            setBoomPlaceXY(getHitObject().getX() - 10, y - 6);
+                            setBoomPlaceXY(getHitObject().getX() - 14, y - 6);
                         } else if (Tank.tanks[x + 7][y] == 3 || Tank.tanks[x + 7][y + 7] == 3) {
                             StageBody.homeAlive = false;
                         } else if (Tank.tanks[x + 7][y] == 4 || Tank.tanks[x + 7][y + 7] == 4) {

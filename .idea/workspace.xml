@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16138535-68a6-464f-b33f-7b28236da72d" name="Changes" comment="" />
+    <list default="true" id="16138535-68a6-464f-b33f-7b28236da72d" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/BackgroundPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/BackgroundPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/GameOver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/GameOver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/Boom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/Boom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/GameOver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/GameOver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/buildings/Ice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/buildings/Ice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/buildings/Sea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/buildings/Sea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/buildings/Steel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/buildings/Steel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/map/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/map/Stage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/map/Stage1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/map/Stage2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/map/Stage2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/map/Stage3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/map/Stage3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/power/Boom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/power/Boom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/power/Clock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/power/Clock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/power/Life.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/power/Life.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/power/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/power/Power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/power/Shield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/power/Shield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/power/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/power/Star.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/power/SteelHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/power/SteelHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stage/body/scores/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stage/body/scores/Score.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +35,9 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
@@ -29,11 +55,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/ben/Downloads/tankbattle&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.38045976&quot;,
@@ -83,10 +111,24 @@
       <workItem from="1686399474529" duration="5000" />
       <workItem from="1686989946989" duration="15418000" />
       <workItem from="1687006912687" duration="1173000" />
+      <workItem from="1687008525068" duration="170000" />
+      <workItem from="1687050467933" duration="459000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1687008637339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687008637339</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
